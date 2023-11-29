@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>characters-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let item of characters">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img alt={{item.name}} src={{item.image}} />
+      </ion-thumbnail>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{item.name}}</ion-card-title>
+          <ion-card-subtitle>{{item.house}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
